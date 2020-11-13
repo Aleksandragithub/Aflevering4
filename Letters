@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+//Viser bl.a. antallet af tegn der findes i den givne streng
+public class Letters_ {
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+		System.out.print(">java Letters ");
+	    String s = in.nextLine();
+	    System.out.println("the letter count :"+ lettercount(s));
+
+	}
+	//Tæller hvert tegn undtagen mellemrum
+	public static int lettercount (String s){
+		char[] ch = s.toCharArray();
+		int count = 0; 
+		for(int i = 0; i < s.length(); i++){
+			if(Character.isLetter(ch[i])){
+				count ++ ;
+	}
+		}
+		return count; 
+	
+	
